@@ -1,0 +1,60 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:gpproje"
+        x:Class="gpproje.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="HotPink" WindowStyle="None" ResizeMode="NoResize">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+
+        <Ellipse x:Name="elips1" HorizontalAlignment="Left" Height="148"
+Margin="621,290,0,0" Stroke="#FDF5E6" VerticalAlignment="Top" Width="156">
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="img\r1.jpg" />
+            </Ellipse.Fill>
+        </Ellipse>
+
+
+        <Ellipse x:Name="elips2" HorizontalAlignment="Left" Height="131"
+Margin="532,173,0,0" Stroke="#FDF5E6" VerticalAlignment="Top" Width="151">
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="img\r2.jpg"/>
+            </Ellipse.Fill>
+        </Ellipse>
+
+
+
+
+
+
+
+        <TextBlock TextWrapping="Wrap" x:Name="baslik" Foreground="Black"
+            FontStyle="Normal" FontSize="25" TextAlignment="Center" FontWeight="Normal"
+            Background="Yellow" TextDecorations="{x:Null}" VerticalAlignment="Top" FontFamily="Shrikhand" Height="42"><Run Text=" "/><Run Text="PAMUK ŞEKER"/><Run Text="  KREŞ"/><Run Language="tr-tr" Text="İ'"/><Run Text="NE HOŞGELDİNİZ :)"/></TextBlock>
+        <Label Content="AD:" Margin="29,67,0,274" HorizontalAlignment="Left" FontWeight="Heavy" Width="39" FontSize="13"/>
+        <Label Content="SOYAD:" Margin="197,66,0,353" HorizontalAlignment="Left" Width="67" FontWeight="Heavy" FontSize="13"/>
+        <TextBox TextWrapping="Wrap" Margin="62,70,634,360" x:Name="ad" HorizontalScrollBarVisibility="Hidden" UseLayoutRounding="False" BorderBrush="Black" VerticalScrollBarVisibility="Hidden" TextChanged="ad_TextChanged"/>
+        <TextBox TextWrapping="Wrap" Margin="259,70,437,360" x:Name="soyad" TextChanged="soyad_TextChanged" BorderBrush="Black"/>
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="36,173,283,74" x:Name="listbox1"/>
+        <Label Content="TC:" Margin="394,66,0,275" HorizontalAlignment="Left" FontWeight="Heavy" Width="40" FontSize="13"/>
+        <TextBox TextWrapping="Wrap" Margin="427,70,269,360" x:Name="tc" TextChanged="tc_TextChanged" BorderBrush="Black"/>
+        <ComboBox x:Name="comboBox1" Margin="605,65,53,357" RenderTransformOrigin="0.722,0.925" BorderBrush="Black">
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+
+        </ComboBox>
+        <Label Content="YAŞ:" Margin="564,65,0,276" HorizontalAlignment="Left" FontWeight="Heavy" Width="48" FontSize="13"/>
+        <Button Content="EKLE" Margin="675,118,53,301" Click="Button_Click" BorderBrush="Black" FontWeight="Bold"/>
+        <Button Content="TEMİZLE" Margin="586,118,142,300" Click="Temizle_click" RenderTransformOrigin="0.525,-0.442" BorderBrush="Black" FontWeight="Bold" />
+        <Button Content="SİL" Margin="445,389,283,34" Click="Sil_Click" BorderBrush="Black" FontWeight="Bold" />
+        <Label Content="SINIFIMIZ:" Margin="34,146,0,196" HorizontalAlignment="Left" FontWeight="Bold" Width="96" FontSize="13" FontStyle="Normal" FontFamily="Arial Black"/>
+        <Button Content="Güncelle" Name="guncelle" Click="guncelle_Click" BorderBrush="Black" FontWeight="Bold" Margin="366,389,366,34"/>
+    </Grid>
+</Window>

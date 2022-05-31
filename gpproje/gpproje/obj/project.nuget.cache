@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "HQq1hMP8EiNI7E2iqwIT98crEQRhEBWrEZceSV5h5MGT5g3pfIzEZ/l4iFs2gBCIAnOI+d4A3dD0SbITBwrJCA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Elvan\\OneDrive\\Masaüstü\\udemy c#\\gpproje\\gpproje\\gpproje.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Elvan\\.nuget\\packages\\entityframework\\5.0.0\\entityframework.5.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "'EntityFramework 5.0.0' paketi, proje hedef çerçevesi 'net6.0-windows7.0' yerine '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' kullanılarak geri yüklendi. Bu paket projenizle tamamen uyumlu olmayabilir.",
+      "libraryId": "EntityFramework",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
+}
